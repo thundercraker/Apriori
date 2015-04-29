@@ -10,27 +10,8 @@ public class Apriori {
 
     public static void main(String[] args)
     {
-<<<<<<< HEAD
 
         String file = args[0];
-=======
-        int[][] transactions = new int[][]
-                {
-                        {1, 2, 5},
-                        {2, 4},
-                        {2, 3},
-                        {1, 2, 4},
-                        {1, 3},
-                        {2, 3},
-                        {1, 3},
-                        {1, 2, 3, 5},
-                        {1, 2, 3}
-                };
-
-        int[] items = new int[] {1,2,3,4,5};
-
-        String file = "/Users/lightning/Downloads/marketbasket.csv";
->>>>>>> origin/master
 
         Apriori ap = new Apriori(file, 40, 0.7d);
 
@@ -94,11 +75,7 @@ public class Apriori {
                 for(String col : cols)
                 {
                     //either true or false
-<<<<<<< HEAD
                     boolean bval = col.trim().equalsIgnoreCase("true");
-=======
-                    boolean bval = (col.trim().equalsIgnoreCase("true")) ? true : false;
->>>>>>> origin/master
                     if(bval)
                     {
                         transaction.add(cc);
@@ -225,13 +202,8 @@ public class Apriori {
         }
         List<Set<Set<Integer>>> UKLK = new ArrayList<>();
 
-<<<<<<< HEAD
         Set<Set<Integer>> currentL;
         Set<Set<Integer>> currentC;
-=======
-        Set<Set<Integer>> currentL = new HashSet<>();
-        Set<Set<Integer>> currentC = new HashSet<>();
->>>>>>> origin/master
 
         FreqSet = new HashMap<>();
 
